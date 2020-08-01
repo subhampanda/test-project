@@ -1,2 +1,2 @@
 FROM centos
-RUN yum install -y git 
+RUN yum install -y git && yum install -y docker 
