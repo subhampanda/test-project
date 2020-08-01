@@ -1,4 +1,8 @@
-FROM centos
-RUN yum install -y git 
-RUN yum install -y wget
-RUN yum install -y php
+FROM node:12
+WORKDIR /app
+ADD . /app
+RUN npm install
+EXPOSE 3000
+RUN npm start
+
+
